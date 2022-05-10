@@ -198,7 +198,7 @@ select:focus {
     .meio,.lateral{
         float: none;
         margin:0;
-        width: 95%;
+        width: 90%;
         margin: auto;
         margin-top: 15%;
     }
@@ -235,7 +235,7 @@ select:focus {
     .meio,.lateral,.vazio,.texto-digitado{
         float: none;
         margin:0;
-        width: 95%;
+        width: 90%;
         margin: auto;
         margin-top: 15%;
     }
@@ -274,6 +274,6 @@ select:focus {
     }
     .copiar{
         margin-top: 8%;
-        width: 100%;
+        width: 95%;
     }
 }
