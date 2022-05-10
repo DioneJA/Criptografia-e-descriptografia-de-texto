@@ -1,11 +1,18 @@
 body {
-    background-color: rgba(250, 235, 215, 0.39);
+    background-color: #faebd763;
     margin: 1%;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 /*Logo*/
 .logo {
     margin: 3% 0 0 5%;
+}
+.logomarca{
+    transition: 0.3s;
+}
+.logomarca:hover{
+    transform: scale(1.1);
 }
 
 /*Entrada de texto*/
@@ -19,9 +26,10 @@ body {
     width: 100%;
     height: 500px;
     border: none;
-    background-color: rgba(250, 235, 215, 0.185);
+    background-color: rgba(158, 143, 124, 0.192);
+    border-radius: 20px;
+    padding: 20px;
     font-size: 32px;
-    font-family: 'Inter';
     line-height: 125%;
     color: #0A3871;
     resize: none;
@@ -34,13 +42,13 @@ select:focus {
     outline: 0;
 }
 
-::-webkit-input-placeholder {
+#texto::-webkit-input-placeholder {
     transition: 0.3s;
     font-size: 32px;
     font-style: normal;
-    font-family: 'Inter';
     color: #0A3871;
 }
+
 
 #texto:focus::-webkit-input-placeholder {
     opacity: 0;
@@ -48,7 +56,6 @@ select:focus {
 
 
 /*Aviso de letras minusculas sem acento*/
-
 .aviso {
     margin-bottom: 2%;
 }
@@ -56,7 +63,6 @@ select:focus {
 .aviso p {
     padding-top: 0.2%;
     color: #495057dc;
-    font-family: 'Inter';
     font-style: normal;
     font-size: 14px;
 }
@@ -66,8 +72,8 @@ select:focus {
     vertical-align: middle;
     padding-right: 1%;
 }
-/*Lateral direita*/
 
+/*Lateral direita*/
 .lateral {
     float: right;
     width: 30%;
@@ -84,7 +90,6 @@ select:focus {
     padding-top: 2%;
 
     color: #343A40;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 27px;
@@ -101,7 +106,6 @@ select:focus {
 
     padding-top: 2%;
     color: #495057cc;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -110,20 +114,31 @@ select:focus {
 }
 
 .texto-digitado {
+    background-color: rgba(158, 143, 124, 0.192);
     float: right;
-    color: #495057;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 27px;
-    line-height: 150%;
+    border-radius: 20px;
     margin-bottom: 5%;
-
     height: 508px;
-    width: 90%;
-    line-height: 125%;
+    width: 100%;
 }
+.resultado{
+    width: 90%;
+    padding: 5% 50% 5% 8%;
+    color: #495057;
+    border: none;
+    background-color: transparent;
+    height: 500px;
+    font-style: normal;
+    font-size: 27px;
+    line-height: 140%;
 
+}
+.resultado:focus,
+select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0px none;
+    outline: 0;
+}
 /*Botoes*/
 .botoes-principais{
     margin-top: 3%;
@@ -137,7 +152,6 @@ select:focus {
     border-radius: 20px;
     width: 300px;
     height: 70px;
-    font-family: 'Inter';
     font-size: 18px;
     color: rgb(250, 235, 215);
     cursor: pointer;
@@ -155,7 +169,6 @@ select:focus {
     height: 70px;
     border-radius: 20px;
     border: 1px solid #0A3871;
-    font-family: 'Inter';
     font-size: 18px;
     cursor: pointer;
 }
@@ -174,7 +187,6 @@ select:focus {
     height: 70px;
     border-radius: 20px;
     border: 1px solid#0A3871;
-    font-family: 'Inter';
     font-size: 18px;
     cursor: pointer;
 }
@@ -182,9 +194,6 @@ select:focus {
     background-color: rgba(185, 182, 178, 0.267);
 }
 
-.remove {
-    display: none;
-}
 @media screen and (max-width: 850px){
     .meio,.lateral{
         float: none;
@@ -234,7 +243,7 @@ select:focus {
         height: 200px;
     }
     .lateral{
-        margin-top:142%;
+        margin-top:150%;
         margin-bottom: 20%;
     }
     .aviso{
