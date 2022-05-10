@@ -1,0 +1,270 @@
+body {
+    background-color: rgba(250, 235, 215, 0.39);
+    margin: 1%;
+}
+
+/*Logo*/
+.logo {
+    margin: 3% 0 0 5%;
+}
+
+/*Entrada de texto*/
+.meio {
+    float :left ;
+    width: 50%;
+    margin: 5% 0 0 15%;
+}
+
+#texto {
+    width: 100%;
+    height: 500px;
+    border: none;
+    background-color: rgba(250, 235, 215, 0.185);
+    font-size: 32px;
+    font-family: 'Inter';
+    line-height: 125%;
+    color: #0A3871;
+    resize: none;
+}
+
+#texto:focus,
+select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0px none;
+    outline: 0;
+}
+
+::-webkit-input-placeholder {
+    transition: 0.3s;
+    font-size: 32px;
+    font-style: normal;
+    font-family: 'Inter';
+    color: #0A3871;
+}
+
+#texto:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+
+/*Aviso de letras minusculas sem acento*/
+
+.aviso {
+    margin-bottom: 2%;
+}
+
+.aviso p {
+    padding-top: 0.2%;
+    color: #495057dc;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 14px;
+}
+
+.aviso img {
+    float: left;
+    vertical-align: middle;
+    padding-right: 1%;
+}
+/*Lateral direita*/
+
+.lateral {
+    float: right;
+    width: 30%;
+}
+
+.vazio {
+    padding-top: 30%;
+}
+
+.vazio h2 {
+    position: static;
+    width: 291px;
+    height: 58px;
+    padding-top: 2%;
+
+    color: #343A40;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 120%;
+    text-align: center;
+}
+
+.vazio p {
+    position: static;
+    width: 291px;
+    height: 48px;
+    left: 0px;
+    top: 74px;
+
+    padding-top: 2%;
+    color: #495057cc;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+}
+
+.texto-digitado {
+    float: right;
+    color: #495057;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 150%;
+    margin-bottom: 5%;
+
+    height: 508px;
+    width: 90%;
+    line-height: 125%;
+}
+
+/*Botoes*/
+.botoes-principais{
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+.criptografia {
+    transition: 0.5s;
+    margin-right: 5%;
+    background-color: #0A3871;
+    border: 0px none;
+    border-radius: 20px;
+    width: 300px;
+    height: 70px;
+    font-family: 'Inter';
+    font-size: 18px;
+    color: rgb(250, 235, 215);
+    cursor: pointer;
+}
+
+.criptografia:hover {
+    background-color: #052955;
+}
+
+.descriptografia {
+    margin-top: 3%;
+    transition: 0.5s;
+    color: #0A3871;
+    width: 300px;
+    height: 70px;
+    border-radius: 20px;
+    border: 1px solid #0A3871;
+    font-family: 'Inter';
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.descriptografia:hover {
+    background-color: rgba(185, 182, 178, 0.267);
+}
+
+.botao-copiar{
+   text-align: center;
+}
+.copiar{
+    transition: 0.5s;
+    color: #0A3871;
+    width: 300px;
+    height: 70px;
+    border-radius: 20px;
+    border: 1px solid#0A3871;
+    font-family: 'Inter';
+    font-size: 18px;
+    cursor: pointer;
+}
+.copiar:hover{
+    background-color: rgba(185, 182, 178, 0.267);
+}
+
+.remove {
+    display: none;
+}
+@media screen and (max-width: 850px){
+    .meio,.lateral{
+        float: none;
+        margin:0;
+        width: 95%;
+        margin: auto;
+        margin-top: 15%;
+    }
+    .lateral{
+        margin-top: 0;
+        width: 85%;
+    }
+    
+    .vazio img{
+        display: none;
+    }
+    .botoes-principais{
+        text-align: center;
+    }
+
+    .vazio{
+        width: 50%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        margin: auto;
+    }
+    .texto-digitado{
+        height: auto;
+        width: 100%;
+        margin: auto;
+    }
+    .copiar{
+        width: 80%;
+        margin: auto;
+        margin-top: 5%;
+    }
+}
+@media screen and (max-width: 420px){
+    .meio,.lateral,.vazio,.texto-digitado{
+        float: none;
+        margin:0;
+        width: 95%;
+        margin: auto;
+        margin-top: 15%;
+    }
+    .meio{
+        height: 200px;
+    }
+    .lateral{
+        margin-top:142%;
+        margin-bottom: 20%;
+    }
+    .aviso{
+        margin-top: 3%;
+    }
+    .botoes-principais{
+        margin-top: 5%;
+        width: 100%;
+    }
+    .criptografia, .descriptografia{
+        text-align: center;
+        margin-bottom: 5%;
+        width: 100%;
+    }
+    .vazio img{
+        display: none;
+    }
+    .vazio h2{
+        width: 85%;
+        margin: auto;
+    }
+    .vazio p{
+        margin: auto;
+        width: 85%;
+    }
+    .texto-digitado{
+        height: auto;
+    }
+    .copiar{
+        margin-top: 8%;
+        width: 100%;
+    }
+}
